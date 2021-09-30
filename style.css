@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace
+}
+/*----------------------------------- HOME PAGE -----------------------------------*/
+/*------- NAV BAR SECTION -------*/
+.logo {
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.logobox {
+    display: flex;
+    align-items: center;
+    
+}
+.logobox h1 {
+    font-size: 30px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    background-color:rgb(20, 20, 20);
+    
+    
+}
+nav {
+    flex: 1;
+    text-align: right; 
+}
+nav ul {
+    display: inline-block;
+    list-style: none;
+    
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 30px;  
+    transition: 0.5s;
+}
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+}
+/* -- SEARCH BAR --*/
+.searchbox {
+    border: cornsilk 1px solid;
+    align-items: center;
+    border-radius: 30px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    outline: none;
+}
+.searchbox input {
+    width: 200px;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 30px;
+    background: none;
+    border: none;
+}
+
+.searchbox input:focus {
+    border: none;
+    outline: none;
+}
+.searcharea {
+    float: right;
+    border-radius: 50%;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+.searchbox input::placeholder {
+    color: blanchedalmond;
+}
+
+/*------- END OF NAV BAR SECTION -------*/
+
+/*------- WELCOME NOTE SECTION -------*/
+.container {
+    background: url(IMAGES/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.leftbox {
+    
+    width: 800px;
+    height: 100%;
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+.leftbox h1 {
+    padding: 10px;
+}
+.leftbox p {
+    margin: 10px;
+    font-size: 25px;
+}
+.leftbox a {
+    background-color: rgb(146, 146, 146);
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 30px;
+    border: solid white 2px;
+    padding:10px 25px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.leftbox a:hover {
+    border: rgb(146, 146, 146) 2px solid;
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+p span {
+    color: red;
+    font-weight: bold;
+}
+/*------- END OF WELCOME NOTE SECTION -------*/
+
+
+/*------- FEATURED PRODUCT SECTION -------*/
+.featured {
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    height: 70vh;
+}
+.featured h2 {
+    padding: 20px;
+    font-size: 40px;
+    position: relative;
+}
+.featured h2::after{
+    content: '';
+    background-color: rgb(29, 10, 10);
+    width: 800px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.featuredbox {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.imagebox img {
+    max-width: 300px;
+    height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+i {
+    color: rgb(255, 255, 255);
+}
+.descriptionbox {
+    background-color: rgb(29, 10, 10);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h4 {
+    font-size: 20px;
+}
+.imagebox {
+    transition: transform 0.3s;
+}
+.imagebox:hover {
+    transform: scale(1.15);
+}
+/*------- END OF FEATURED PRODUCT SECTION -------*/
+
+
+/*------- BUY BUTTON SECTION -------*/
+.buy_buttonbox {
+    background-color: rgb(20, 20, 20);
+    height: 10vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buy_button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(29, 10, 10);
+    border-radius: 30px;
+    border: white 2px solid;
+    font-size: 35px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.buy_button:hover {
+    transform: scale(1.15);
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border: rgb(29, 10, 10) 2px solid;
+}
+/*----------------------------------- PRODUCT PAGE -----------------------------------*/
+.productpage_container {
+    background-color: rgb(85, 85, 85);
+    min-height: 100vh;
+    padding: 20px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.row_product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product_container {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.product_container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+.buynowbutton button {
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    margin: 10px;
+    background-color:rgb(41, 41, 41); 
+    border: 2px solid white;
+    cursor: pointer;
+}
+.buynowbutton button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+/*----------------------------------- ORDERING PAGE -----------------------------------*/
+.ordersection_box {
+    padding: 20px;
+    background-color:rgb(41, 41, 41); 
+    
+}
+.ordersection_productbox {
+    padding: 10px 40px;  
+    
+    width: 1000px;
+}
+.ordersection_box h1 {
+    font-size: 100px;
+}
+.mainbox {
+    display: flex;
+}
+.box1 img {
+    width: 500px;
+    height: 400px;
+}
+.quantitybox {
+    width: 500px;
+    margin-left: 40px;
+    
+}
+.quantitybox h1{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.quantitybox h2{
+    font-size:30px;
+    margin: 10px 0px;
+}
+.quantitybox select {
+    width: 200px;
+    height: 50px;
+    margin: 20px 0px;
+}
+.quantitybox button {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+.box1 {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.rightbox {
+    border: 2px solid white;
+    margin: 50px;
+    text-align: center;
+    width: 500px;
+    height: 550px;
+    text-align: left;
+    padding: 10px;
+}
+.rightbox input {
+    color: black;
+    padding: 10px; 
+}
+
+.infobox input {
+    width: 400px;
+}
+.payment_titlebox {
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+}
+.inputbox {
+    text-align: left;
+    padding: 20px 0px;
+    
+}
+
+.infobox {
+    text-align: left;
+    padding: 10px 0px;
+    font-family:sans-serif; 
+}
+
+.rightbox button {
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+    
+
+}
